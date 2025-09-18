@@ -8,7 +8,15 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/assets/images/quiz-logo.png', width: 300),
+          Image.asset('assets/assets/images/quiz-logo.png', width: 300,
+            color:const Color.fromARGB(152, 218, 183, 60),// photo pe colour daal sakte hai 
+          ),
+          /*Opacity
+          (
+            opacity: 0.4,
+            child: Image.asset('assets/assets/images/quiz-logo.png', width: 300
+          ),
+          ),*/
           SizedBox(height: 80),
           Text(
             'QUIZ APP',
@@ -19,12 +27,16 @@ class StartScreen extends StatelessWidget {
           ),
           SizedBox(height: 30),
 
-          OutlinedButton(
-            onPressed: () {},
+          OutlinedButton.icon(
+            onPressed: () {
+              //The is the function which will be executed when the butoon will be pressed
+              
+            },
             style: OutlinedButton.styleFrom(
               foregroundColor: const Color.fromARGB(255, 255, 255, 255),
             ),
-            child: Text('Start Quiz'),
+            icon: Icon(Icons.arrow_circle_right_outlined),
+            label: Text('Start Quiz'),
           ),
         ],
       ),

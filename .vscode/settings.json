@@ -4,6 +4,7 @@
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnSave": true,
     "editor.formatOnType": true
-  }
+  },
+  "cmake.sourceDirectory": "C:/Users/KIIT0001/Desktop/Flutter/quiz_app/linux"
 
 }
